@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "https://my-client-jugk.onrender.com" }));
 
 app.listen(process.env.PORT || 3001, () => {
   console.log(`running on port ${process.env.PORT || 3001} `);
